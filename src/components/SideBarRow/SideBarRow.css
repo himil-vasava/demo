@@ -1,0 +1,45 @@
+.sidebarrow {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.sidebarrow__icon {
+    color: #606060;
+    font-size: large !important;
+}
+
+.sidebarrow__title {
+    flex: 1;
+    margin-left: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #606060;
+}
+
+.sidebarrow:hover {
+    background-color: rgb(233, 218, 247);
+    cursor: pointer
+}
+
+.sidebarrow:hover >.sidebarrow__icon {
+    color: #6b1fc2;
+}
+
+.sidebarrow:hover >.sidebarrow__title {
+    font-weight: bold;
+    color: #6b1fc2;
+}
+
+.sidebarrow.selected {
+    background-color: rgb(233, 218, 247);
+}
+
+.sidebarrow.selected >.sidebarrow__icon {
+    color: #6b1fc2;
+}
+
+.sidebarrow.selected >.sidebarrow__title {
+    font-weight: bold;
+    color: #6b1fc2;
+}
