@@ -6,6 +6,7 @@ import CreateOutlinedIcon from '@material-ui/icons/CreateOutlined';
 import DeleteOutlineOutlinedIcon from '@material-ui/icons/DeleteOutlineOutlined';
 import Managementdata from '../../data/Managementdata';
 import {Link} from 'react-router-dom';
+import TableManagement2 from '../TableManagement2/TableManagement2';
 
 const Management = () => {
     const [expandedRows, setExpandedRows] = useState([]);
@@ -43,7 +44,8 @@ const Management = () => {
                 <div className="selectedtitle">Access Control</div>
                 <div>Assigned Members</div>
             </div>
-            <table>
+            <TableManagement2 data={Managementdata} />
+            {/*<table>
             <tr>
                 <th>Department/Role Name</th>
                 <th>Access Level</th>
@@ -90,7 +92,7 @@ const Management = () => {
                 </>
                 </>
             ))}
-            </table>
+            </table>*/}
         </div>
     );
 }

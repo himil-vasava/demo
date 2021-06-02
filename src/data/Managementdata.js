@@ -22,7 +22,6 @@ const Managementdata = [
     },
     {
         id:4,
-
         Department: 'Purchase Order/Work Order',
         Access: 'Restricted Access',
         Summary: 'View|Create',

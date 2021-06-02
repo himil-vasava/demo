@@ -12,14 +12,16 @@ function App() {
       <Router>
         <Header />
         <Switch>
-        <Route path='/'>
+        <Route exact path='/'>
+          <div className="app__mainpage">
+            <SideBar />
+            <Home />
+          </div>
+        </Route>
+        <Route exact path='/department'>
           <div className="app__mainpage">
             <SideBar />
             <Management />
-          </div>
-        </Route>
-        <Route path='/management'>
-          <div className="app__mainpage">
           </div>
         </Route>
         </Switch>
